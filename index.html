@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Mehta - Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer specializing in React, TypeScript, and scalable frontend architectures for SaaS products.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        * {
+            font-family: "STIX Two Text", serif;
+            font-feature-settings: "onum", "pnum", "kern";
+            text-wrap: pretty;
+        }
+        
+        body {
+            background-color: #fffaf0;
+            color: #444444;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-delay-1 { transition-delay: 0.1s; }
+        .stagger-delay-2 { transition-delay: 0.2s; }
+        .stagger-delay-3 { transition-delay: 0.3s; }
+        .stagger-delay-4 { transition-delay: 0.4s; }
+        
+        .nav-link {
+            color: #666666;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #444444;
+        }
+        
+        .social-link {
+            color: #666666;
+            transition: color 0.2s ease;
+        }
+        
+        .social-link:hover {
+            color: #444444;
+        }
+        
+        .social-link.linkedin:hover {
+            color: #2563eb;
+        }
+        
+        .project-card {
+            border-color: #e5e5e5;
+            background-color: #fffaf0;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .project-button {
+            color: #666666;
+            border-color: #e5e5e5;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .project-button:hover {
+            background-color: #f0f0f0;
+            color: #444444;
+        }
+        
+        .contact-link {
+            color: #2563eb;
+            text-decoration-color: rgba(37, 99, 235, 0.3);
+            transition: color 0.2s ease;
+        }
+        
+        .contact-link:hover {
+            color: #1d4ed8;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen scroll-smooth">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-sm border-b px-6 md:px-12 py-4 flex justify-between items-center" style="background-color: #fffaf0e6; border-color: #e5e5e5;">
+        <h1 class="text-lg font-medium" style="color: #444444;">Rahul Mehta</h1>
+        <div class="space-x-6 text-sm">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="px-6 md:px-12 py-20 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-normal tracking-tight mb-6 fade-in" style="color: #444444;">
+                Rahul Mehta
+            </h1>
+            <p class="text-xl max-w-2xl mb-8 leading-relaxed fade-in stagger-delay-1" style="color: #666666;">
+                Senior Software Engineer specializing in React, TypeScript, and scalable frontend architectures for SaaS products.
+            </p>
+            <div class="flex gap-4 fade-in stagger-delay-2">
+                <a href="https://github.com/rjrahul98" target="_blank" class="social-link">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://linkedin.com/in/rjrahul98" target="_blank" class="social-link linkedin">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="mb-24 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="about">
+            <h2 class="text-3xl font-normal mb-8" style="color: #444444;">About</h2>
+            <div class="prose prose-lg leading-relaxed" style="color: #666666;">
+                <p class="mb-6">
+                    I'm a Senior Software Engineer with 3+ years of experience building and scaling SaaS web applications. Currently leading frontend architecture at Scalenut, where I've improved performance by 30% and contributed to significant business growth.
+                </p>
+                <p>
+                    I specialize in React, TypeScript, and modern frontend technologies, with a strong focus on creating collaborative tools, SEO optimization platforms, and user-centric interfaces that drive real business impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-24 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="skills">
+            <h2 class="text-3xl font-normal mb-8" style="color: #444444;">Skills</h2>
+            <div class="space-y-6">
+                <div class="fade-in">
+                    <h3 class="text-sm font-medium mb-3" style="color: #444444;">Languages</h3>
+                    <p class="text-sm leading-relaxed" style="color: #666666;">
+                        JavaScript • TypeScript • Python • HTML & CSS
+                    </p>
+                </div>
+                <div class="fade-in stagger-delay-1">
+                    <h3 class="text-sm font-medium mb-3" style="color: #444444;">Frontend</h3>
+                    <p class="text-sm leading-relaxed" style="color: #666666;">
+                        React • Redux • Tailwind CSS • MUI
+                    </p>
+                </div>
+                <div class="fade-in stagger-delay-2">
+                    <h3 class="text-sm font-medium mb-3" style="color: #444444;">Backend & Tools</h3>
+                    <p class="text-sm leading-relaxed" style="color: #666666;">
+                        Node.js • Express.js • REST APIs • Git
+                    </p>
+                </div>
+                <div class="fade-in stagger-delay-3">
+                    <h3 class="text-sm font-medium mb-3" style="color: #444444;">Cloud & DevOps</h3>
+                    <p class="text-sm leading-relaxed" style="color: #666666;">
+                        AWS • Firebase • Puppeteer • Webpack
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-24 px-6 md:px-12 fade-in" id="projects">
+            <h2 class="text-3xl font-normal mb-12 max-w-5xl mx-auto" style="color: #444444;">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="project-card border rounded-lg p-8">
+                    <h3 class="text-xl font-medium mb-4" style="color: #444444;">Cruise Mode - SEO Content Workflow</h3>
+                    <p class="mb-6 leading-relaxed" style="color: #666666;">
+                        Led development of Scalenut's flagship long-form SEO content generation workflow using LLMs. Directly contributed to 60% increase in highest-tier plan conversions (10% → 16%).
+                    </p>
+                    <button class="project-button text-sm font-medium border px-4 py-2 rounded flex items-center gap-2">
+                        Case Study
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                
+                <div class="project-card border rounded-lg p-8">
+                    <h3 class="text-xl font-medium mb-4" style="color: #444444;">Google Docs-style Collaborative Editor</h3>
+                    <p class="mb-6 leading-relaxed" style="color: #666666;">
+                        Built a real-time collaborative editor using Tiptap with multi-user editing, rich formatting, and inline commenting features for seamless content creation.
+                    </p>
+                    <button class="project-button text-sm font-medium border px-4 py-2 rounded flex items-center gap-2">
+                        Learn More
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                
+                <div class="project-card border rounded-lg p-8">
+                    <h3 class="text-xl font-medium mb-4" style="color: #444444;">Auto-Optimizer - SEO Analysis Tool</h3>
+                    <p class="mb-6 leading-relaxed" style="color: #666666;">
+                        Developed a 3-step SEO analyzer that automatically fills content gaps, internal links, and key phrases based on competitor analysis.
+                    </p>
+                    <button class="project-button text-sm font-medium border px-4 py-2 rounded flex items-center gap-2">
+                        View Details
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                
+                <div class="project-card border rounded-lg p-8">
+                    <h3 class="text-xl font-medium mb-4" style="color: #444444;">On-Page Pro Dashboard</h3>
+                    <p class="mb-6 leading-relaxed" style="color: #666666;">
+                        Created a crawler-based dashboard tool to detect and fix SEO issues like missing meta tags, image alt text, broken links, and schema markup.
+                    </p>
+                    <button class="project-button text-sm font-medium border px-4 py-2 rounded flex items-center gap-2">
+                        Explore
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-24 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="experience">
+            <h2 class="text-3xl font-normal mb-12" style="color: #444444;">Experience</h2>
+            <div class="space-y-12">
+                <div class="border-l-2 pl-8 ml-4" style="border-color: #e5e5e5;">
+                    <div class="relative">
+                        <div class="absolute -left-10 w-3 h-3 rounded-full" style="background-color: #444444;"></div>
+                        <h4 class="text-lg font-medium" style="color: #444444;">Senior Software Engineer at Scalenut</h4>
+                        <p class="text-sm mb-2" style="color: #888888;">Apr 2024 – Current • Gurugram, India/Remote</p>
+                        <div class="space-y-2 leading-relaxed" style="color: #666666;">
+                            <p>• Led frontend architecture and core development, improving page load and reducing latency by 30%</p>
+                            <p>• Developed Google Docs-style collaborative editor using Tiptap with real-time multi-user editing</p>
+                            <p>• Led development of Auto-Optimizer, a 3-step SEO analyzer with competitor analysis</p>
+                            <p>• Managed 4-member frontend team in agile sprints across product and backend teams</p>
+                            <p>• Conducted 20+ code reviews/month ensuring clean, modular, and reusable code patterns</p>
+                            <p>• Migrated legacy modules from Vanilla JS to React + TypeScript, reducing maintenance by 40%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-l-2 pl-8 ml-4" style="border-color: #e5e5e5;">
+                    <div class="relative">
+                        <div class="absolute -left-10 w-3 h-3 rounded-full" style="background-color: #444444;"></div>
+                        <h4 class="text-lg font-medium" style="color: #444444;">Software Engineer at Scalenut</h4>
+                        <p class="text-sm mb-2" style="color: #888888;">June 2022 – Apr 2024 • Gurugram, India/Remote</p>
+                        <div class="space-y-2 leading-relaxed" style="color: #666666;">
+                            <p>• Built Cruise Mode workflow that contributed to 60% increase in highest-tier plan conversions</p>
+                            <p>• Created On-Page Pro, a crawler-based dashboard for SEO issue detection and fixing</p>
+                            <p>• Engineered AI Detection & Humanizer, improving SEO success by 40%</p>
+                            <p>• Integrated WordPress, Shopify, Semrush, and Copyscape for streamlined workflows</p>
+                            <p>• Developed custom WordPress plugin for seamless publishing from Scalenut platform</p>
+                            <p>• Integrated real-time SEO scoring with external APIs and WebSocket-based updates</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-l-2 pl-8 ml-4" style="border-color: #e5e5e5;">
+                    <div class="relative">
+                        <div class="absolute -left-10 w-3 h-3 rounded-full" style="background-color: #444444;"></div>
+                        <h4 class="text-lg font-medium" style="color: #444444;">Associate Software Engineer at Jungleworks</h4>
+                        <p class="text-sm mb-2" style="color: #888888;">June 2021 – June 2022 • Chandigarh, India</p>
+                        <div class="space-y-2 leading-relaxed" style="color: #666666;">
+                            <p>• Built responsive frontend features for multi-tenant B2B web apps using React.js and Redux</p>
+                            <p>• Delivered UI improvements and resolved production bugs increasing client retention</p>
+                            <p>• Collaborated with backend teams and product owners on roadmap prioritization</p>
+                            <p>• Balanced development and maintenance across 15+ client projects with consistent quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-24 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="education">
+            <h2 class="text-3xl font-normal mb-8" style="color: #444444;">Education</h2>
+            <div>
+                <h4 class="text-lg font-medium mb-2" style="color: #444444;">B.Tech in Computer Science and Engineering</h4>
+                <p class="mb-3" style="color: #666666;">National Institute of Technology (NIT), Srinagar</p>
+                <p class="text-sm mb-4" style="color: #888888;">Aug 2017 – June 2021</p>
+                <div class="space-y-2" style="color: #666666;">
+                    <p>• Founding member of WeByte, a technical club at NIT Srinagar</p>
+                    <p>• Organized Webify Competition at TechFest, NIT Srinagar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="mb-24 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="philosophy">
+            <h2 class="text-3xl font-normal mb-8" style="color: #444444;">Philosophy</h2>
+            <blockquote class="text-lg leading-relaxed italic border-l-4 pl-6" style="color: #666666; border-color: #e5e5e5;">
+                I believe in building products that create real business impact through clean code, thoughtful architecture, and user-centered design. Great software should not only solve problems efficiently but also scale gracefully as teams and requirements grow.
+            </blockquote>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="border-t pt-16 max-w-3xl px-6 md:px-12 mx-auto fade-in" id="contact" style="border-color: #e5e5e5;">
+            <h2 class="text-3xl font-normal mb-8" style="color: #444444;">Contact</h2>
+            <div class="space-y-3">
+                <p class="leading-relaxed" style="color: #666666;">
+                    Email me at 
+                    <a href="mailto:therahulmehta98@gmail.com" class="contact-link underline ml-1">
+                        therahulmehta98@gmail.com
+                    </a>
+                </p>
+                <p class="leading-relaxed" style="color: #666666;">
+                    Call me at 
+                    <a href="tel:+919149938179" class="contact-link underline ml-1">
+                        +91 9149938179
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-12 text-sm mt-16 border-t" style="color: #888888; border-color: #e5e5e5;">
+        © <span id="current-year"></span> Rahul Mehta. Built with React & Tailwind CSS.
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '-100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Hero animations (immediate)
+        setTimeout(() => {
+            document.querySelectorAll('header .fade-in').forEach(el => {
+                el.classList.add('visible');
+            });
+        }, 100);
+    </script>
+</body>
+</html>
